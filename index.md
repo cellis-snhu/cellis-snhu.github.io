@@ -48,10 +48,13 @@ Below is a sample code review for the artifacts used to create my capstone proje
   </iframe>
 </div>
 
-
 ---
 
 # Project 1: Software Engineering and Design
+
+[![Enhancement 1](images/task_app.png)](https://github.com/cellis-snhu/Orbit)
+
+---
 
 ### Description
 
@@ -89,11 +92,11 @@ All in all I think the technical choices of Python with the Flask web framework 
 
 ---
 
-[![Enhancement 1](images/task_app.png)](https://github.com/cellis-snhu/Orbit)
+# Project 2: Algorithms and Data Structures
+
+[![Enhancement 2](images/steps_plot.png)](https://github.com/cellis-snhu/StepTracker)
 
 ---
-
-# Project 2: Algorithms and Data Structures
 
 ### Description
 
@@ -124,8 +127,6 @@ After building replay functionality, I began to develop a pedometer class, initi
 
 ### References:
 Mattop. (n.d.). Android accelerometer walking activity. Kaggle. https://www.kaggle.com/datasets/mattop/android-accelerometer-walking-activity
-
-[![Enhancement 2](images/steps_plot.png)](https://github.com/cellis-snhu/StepTracker)
 
 ---
 
