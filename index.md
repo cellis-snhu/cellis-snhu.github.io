@@ -53,8 +53,6 @@ Below is a sample code review for the artifacts used to create my capstone proje
 
 # Project 1: Software Engineering and Design
 
-## Narrative
-
 ### Description
 
 The artifact chosen for the enhancement for software engineering and design was a sample set of Java code objects built as services with corresponding automated tests in JUnit. I thought the base of the Task object was a good starting point for a task management system and planned to develop this Java code into a full stack web app in another programming language. The language eventually settled on for this task was Python, as the language itself and the available web frameworks (Flask was chosen) offer simple access to many features that would allow rapid prototyping in the time constrained environment of this class. The web app would feature a frontend using server side rendering of html templates with a backend that handled task objects and services similar to the existing Java code, along with a suite of unit tests for the task objects and services.
@@ -97,7 +95,35 @@ All in all I think the technical choices of Python with the Flask web framework 
 
 # Project 2: Algorithms and Data Structures
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquet nunc, vel convallis magna justo nec erat. Curabitur vel fermentum elit, et efficitur felis. Integer sed pulvinar augue. Suspendisse potenti. Duis non orci sit amet elit tempor hendrerit a sed enim.
+### Description
+
+For the enhancement topic Algorithms and Data Structures, I chose to work on a basic Android mobile application from the class CS320: Mobile Development. This application in the original state was a basic Android app that had a requirement to read and display some sort of sensor data, and the sensors explored in my project were the accelerometer which presents data on the position of the phone based on x, y, and z axis.
+
+The plan for enhancement is to take this basic application, and apply the development of a more advanced algorithm to display sensor information. In this case the choice was to stay with the accelerometer data format, and instead of just displaying sensor data it was decided to process accelerometer data with a pedometer algorithm that attempts to use peak finding tactics to determine when a person carrying a device is taking a ‘step’.
+
+Since it is impossible to ‘simulate’ sensor data in Android Studio directly, as the sensors are not able to be overridden in the operating system, I have employed writing a second code path which is toggle-able by a flag that can pass sample sensor data including time step, and x, y, and z axis acceleration in csv format. The sample data I obtained for testing this algorithm (Mattop n.d.) is a creative commons 0 licensed sample set of data that does not require attribution, however it is attributed in this paper optionally due to the usefulness I found from the data set.
+
+The basic peak finding algorithm was developed first to find any peak in the code, a peak being a point n, where n > (n-1) and n > (n+1). Beyond this slightly more advanced techniques were included based on common peak finding algorithms such as threshold (peak is a peak if n > threshold along with the previous requirements), and a distance measure to filter out noise between steps that is adjustable.
+Justification
+
+This specific artifact was selected for my portfolio as it offered a base to build on without a large amount of code rework just to make enhancements (or so I thought, it ended up needing an entire separate code path to use sample sensor data for testing), but would allow me to easily drop in a class or methods that could implement the advanced algorithm. The pedometer algorithm was chosen specifically after I had read about some of them during the CS320 class at the end in a literature review, and it seemed like a good project for CS499 as it could be built with a minimum viable product version (basic peak finding) in order to meet deadlines, but would allow exploration beyond that if I wanted to explore more advanced techniques on top of the basics.
+
+### Course Outcomes
+
+There is one main course outcome that is the focus of this specific enhancement, as my other enhancement projects broadly cover the remaining outcomes, which is:
+
+**Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution while managing the trade-offs involved in design choices.**
+
+As stated above, development of an advanced algorithm for a pedometer involves both the design and evaluation of a computing solution to solve a problem using algorithmic principles by definition. In addition it involves making choices about the tradeoffs during design of the algorithm such as which enhancements to include for noise filtering and peak finding, in order to obtain what is an accurate result, an accurate result being subjective as determined by the data and develop initially so it must be mapped or compared to some other process that can do the same task as the algorithm (in this case it is verified with scipy, a python library with a builtin peak finding algorithm both to generate sane numbers for testing how many peaks are found, but also to confirm the algorithm performance matches the expected output for things like the threshold and distance formulae, which are both implemented in the python library as configurable inputs to the find_peaks function.)
+
+### Enhancement Process
+
+The initial process of building this enhancement first involved finding a way to ‘replay’ sensor data in order to make testing at a PC feasible without having to walk around personally, and also not require a device of the specific specification needed. My initial assumption after some reading was it would be possible to replay sensor data through android studio, which is actually false, and thus required building a second code path that could replay test data from CSV, which is used for the actual proof of the algorithms functionality, as I do not possess Android hardware capable for this assignment, however there is functional code that would allow this, all of which uses the same underlying pedometer algorithm classes for its implementation.
+
+After building replay functionality, I began to develop a pedometer class, initially having it just replay a dataset and find the number of data points in order to validate all the data was processed, this is called pointCount in the code, as it is easy to verify by opening a CSV in excel and checking the number of rows. Beyond this I began to implement the algorithm in a new function, building first from a basic peak finding loop through the data, and later adding threshold functionality and distance between points to filter out noisy data. To test everything works I implemented similar functionality in a python script using scipy’s internal peak finding function, as well as matplotlib to graph the plot of data and mark the ‘peaks’ on the graph to get a basic idea if it was working as intended through a visual representation.
+
+### References:
+Mattop. (n.d.). Android accelerometer walking activity. Kaggle. https://www.kaggle.com/datasets/mattop/android-accelerometer-walking-activity
 
 [![Enhancement 2](images/steps_plot.png)](https://github.com/cellis-snhu/StepTracker)
 
