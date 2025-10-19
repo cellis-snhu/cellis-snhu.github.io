@@ -48,6 +48,8 @@ Below is a sample code review for the artifacts used to create my capstone proje
   </iframe>
 </div>
 
+
+
 ---
 
 # Project 1: Software Engineering and Design
@@ -150,6 +152,7 @@ The database enhancement requirements themselves were not specific on the scale 
 
 ### Course Outcomes
 I believe that the below two course outcomes were covered during the development of this enhancement:
+
 **Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals (software engineering/design/database)**
 
 **Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources**
