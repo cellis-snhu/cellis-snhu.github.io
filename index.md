@@ -59,6 +59,9 @@ areas for improvement including structure, logic, security, testing, and overall
 
 [![Enhancement 1](images/task_app.png)](https://github.com/cellis-snhu/Orbit)
 
+Original artifact link:
+[Java Task Test Classes](https://github.com/cellis-snhu/JavaTask#)
+
 ---
 
 ### Description
@@ -140,6 +143,9 @@ Mattop. (n.d.). Android accelerometer walking activity. Kaggle. https://www.kagg
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquet nunc, vel convallis magna justo nec erat. Curabitur vel fermentum elit, et efficitur felis. Integer sed pulvinar augue. Suspendisse potenti. Duis non orci sit amet elit tempor hendrerit a sed enim.
 
 [![Enhancement 3](images/db.png)](https://github.com/cellis-snhu/Orbit)
+
+Original artifact link:
+[Java Task Test Classes](https://github.com/cellis-snhu/JavaTask#)
 
 ---
 
