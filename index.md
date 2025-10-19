@@ -48,7 +48,8 @@ Below is a sample code review for the artifacts used to create my capstone proje
   </iframe>
 </div>
 
-
+This code review covers the existing functionality of the code for each of the below artifacts. The review process also entails a deep dive into
+areas for improvement including structure, logic, security, testing, and overall code quality and documentation.
 
 ---
 
