@@ -104,6 +104,9 @@ All in all I think the technical choices of Python with the Flask web framework 
 
 [![Enhancement 2](images/steps_plot.png)](https://github.com/cellis-snhu/StepTracker)
 
+Original artifact links:
+[Android Sensor Activity](https://github.com/cellis-snhu/AndroidSensor)
+
 ---
 
 ### Description
