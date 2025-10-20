@@ -79,8 +79,10 @@ The artifact was improved as it was originally a basic task list where a task ha
 ### Course Outcomes
 
 The course outcomes planned originally to meet were, although only partially due to needing to publish the ePortfolio to meet many of the communications goals were : 
-Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science
-Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts
+
+**Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science**
+
+**Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts**
 
 I believe both of these have been met by the development of this app as well as the unpublished in progress elements of the ePortfolio that documents the enhancement for a public audience. In addition I stated that I would also be meeting the below outcomes related specifically to the technical skills involved in development:
 
