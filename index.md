@@ -143,8 +143,6 @@ Mattop. (n.d.). Android accelerometer walking activity. Kaggle. https://www.kagg
 
 # Project 3: Databases
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquet nunc, vel convallis magna justo nec erat. Curabitur vel fermentum elit, et efficitur felis. Integer sed pulvinar augue. Suspendisse potenti. Duis non orci sit amet elit tempor hendrerit a sed enim.
-
 [![Enhancement 3](images/db.png)](https://github.com/cellis-snhu/Orbit)
 
 Original artifact link:
